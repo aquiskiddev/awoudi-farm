@@ -3,7 +3,9 @@ import { Footer } from "@/components/layout/footer";
 import { Hero } from "@/components/home/hero";
 import { ProduitsPhares } from "@/components/home/produits-phares";
 import { PresentationFerme } from "@/components/home/presentation-ferme";
-import { CtaCommande } from "@/components/home/cta-commande";
+import { CoulissesFerme } from "@/components/home/coulisses-ferme";
+import { ContactCommande } from "@/components/home/contact-commande";
+import { WhatsAppFloat } from "@/components/whatsapp-float";
 
 export default function HomePage() {
   return (
@@ -13,9 +15,11 @@ export default function HomePage() {
         <Hero />
         <ProduitsPhares />
         <PresentationFerme />
-        <CtaCommande />
+        <CoulissesFerme />
+        <ContactCommande />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 }

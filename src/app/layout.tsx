@@ -1,6 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#12200f",
+};
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -16,13 +23,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Awoudi Farm — Du champ a votre table",
+  title: "Awoudi Farm — Poules, dindons, chèvres, œufs, pintades à Lomé",
   description:
-    "Awoudi Farm cultive et livre des produits agricoles frais a Lome. Decouvrez notre catalogue et commandez en ligne.",
+    "Ferme familiale à Lomé dirigée par Awoudi Kodzo Mawufe. Poules, dindons, chèvres, œufs et pintades vendus en direct, commande sur WhatsApp.",
   openGraph: {
     title: "Awoudi Farm",
     description:
-      "Produits agricoles frais, cultives avec soin, livres a Lome et ses environs.",
+      "Poules, dindons, chèvres, œufs et pintades élevés à Lomé, vendus en direct.",
     locale: "fr_TG",
     type: "website",
   },
